@@ -1,0 +1,64 @@
+
+.selector-for-some-widget{
+    box-sizing: content-box;
+}
+
+.menu{
+    background-color: #2b2b2b; 
+      
+}
+
+.logo-text{
+    font-family: fantasy;
+    
+}
+
+h1.text{
+    font-size: 20mm;
+}
+
+p.maior{
+    font-size: 10mm;
+}
+
+p.medio{
+    font-size: 7mm;
+}
+
+.paragrafo{
+    margin: 10px;
+}
+
+.botao{
+    margin: 30px;
+    margin-left: 10px;  
+    margin-right: 10px;
+}
+
+.formu{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.rodape{
+    background-color: #2b2b2b;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 900px) {
+    p.maior{
+        font-size: 6mm;
+    }    
+    
+}
+
+@media only screen and (max-width: 1400px) {
+    p.medio{
+        font-size: 10mm;
+    }
+
+
+}
+
