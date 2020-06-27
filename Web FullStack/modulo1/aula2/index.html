@@ -10,12 +10,15 @@
             function aula2Decer(){
                 var submenu = document.getElementById('submenu1');
                 var submenu2 = document.getElementById('submenu2');
+                var submenu3 = document.getElementById('submenu3');
                 if(submenu.style.display == 'list-item'){
-                submenu.style.display = 'none';
-                submenu2.style.display = 'none';
+                    submenu.style.display = 'none';
+                    submenu2.style.display = 'none';
+                    submenu3.style.display = 'none';
                 }else{
-                submenu.style.display = 'list-item';
-                submenu2.style.display = 'list-item';
+                    submenu.style.display = 'list-item';
+                    submenu2.style.display = 'list-item';
+                    submenu3.style.display = 'list-item';
                 }
             }
         </script>
@@ -26,9 +29,8 @@
                 <ul id="ul">
                     <li id="li"><a id="a" href="/index.html">Inicio</a></li>
                     <li id="li"><a id="a" href="../index.html">Modulo 1</a></li>
-                    <li id="li"><a id="a" href="#">Modulo 2</a></li>
+                    <li id="li"><a id="a" href="/modulo2/index.html">Modulo 2</a></li>
                     <li id="li"><a id="a" href="#">Modulo 3</a></li>
-                    <li id="li"><a id="a" href="#">Modulo 4</a></li>
                     <li id="li"><a id="a" href="/prototipagem/index.html">Prototipagem</a></li>
                 </ul>
             </nav>
@@ -46,10 +48,10 @@
                         <li class="li"><a class="menua"   href="../aula1/index.html">Aula 1</a></li><hr>    
                         <li class="li"><a class="menua" onclick="aula2Decer()" href="#">Aula 2</a></li>
                         <li id="submenu1" class="submenu"><a  class="menua" href="index.html">HTML</a></li>
-                        <li id="submenu2" class="submenu"><a  class="menua" href="pages/secondpart.html">CSS</a></li><hr>
-                        <li class="menuli"><a class="menua" href="">Aula 3</a></li><hr>
+                        <li id="submenu2" class="submenu"><a  class="menua" href="pages/secondpart.html">CSS</a></li>
+                        <li id="submenu3" class="submenu"><a  class="menua" href="#">Pratica</a></li><hr>
+                        <li class="menuli"><a class="menua" href="../aula3/index.html">Aula 3</a></li><hr>
                         <li class="menuli"><a class="menua" href="#">Aula 4</a></li><hr>
-                        <li class="menuli"><a class="menua" href="#">Aula 5</a></li><hr>
                     </ul>
                 </nav>
                 <article>
