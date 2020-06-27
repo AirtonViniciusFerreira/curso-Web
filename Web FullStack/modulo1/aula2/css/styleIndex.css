@@ -1,0 +1,149 @@
+.sessao{
+    display: table;
+    background-color: rgb(133, 219, 99);              
+}
+
+.submenu{
+    display: none;
+}
+
+.menunav{
+    width: 10%; 
+    min-height: 750px;    
+    background-color: rgb(181, 221, 165);
+    font-size: 20px;
+    border: solid;
+    float: left;
+    margin-right: 10px;           
+}
+
+.menuul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: rgb(0, 0, 0);
+}
+
+.menuli{
+    display: list-item;       
+}
+
+.menua{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+article{
+    width: 80%;
+    float: left;
+    background-color: rgb(133, 219, 99);
+}
+
+article p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+.imagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.list{
+    font-size: 18px;
+}
+
+@media(max-width:1100px){
+    nav{
+        font-size: 35px;
+        width: 100%;    
+    }
+
+    header{
+        font-size: 30px;
+    }
+    
+    .submenu{
+        display: inline;
+    }
+
+    .nav{
+        width: 100%;
+        min-height: auto;
+        font-size: 30px;
+    }
+    
+    .li{
+        display: inline;
+    }
+
+    article{
+        width: 100%;
+    }
+    
+    article p{
+        text-align: justify;
+        font-size: 35px;
+    }
+
+    article h3{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .list{
+        font-size: 35px;
+    }
+
+}
+
+@media(max-width:600px){
+    nav{
+        font-size: 15px;
+        width: 100%;    
+    }
+
+    header{
+        font-size: 15px;
+    }
+
+    .nav{
+        width: 100%;
+        min-height: auto;
+        font-size: 20px;
+    }
+
+    .li{
+        display: inline;
+    }
+
+    article{
+        width: 100%;
+    }
+    
+    article p{
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    article h3{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    article img{
+        width: 300px;
+    }
+
+    .list{
+        font-size: 20px;
+    }
+}
+

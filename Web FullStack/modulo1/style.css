@@ -1,0 +1,19 @@
+.menun{
+    width: 100%; 
+    background-color: rgb(203, 224, 195);
+    font-size: 20px;          
+}
+
+.menuu{
+    margin: 0;
+    padding: 0;
+}
+
+.menul{
+    display: inline;       
+}
+
+.menu{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}

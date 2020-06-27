@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Modulo 1 - Aula 2</title>
+        <link rel="stylesheet" href="css/styleIndex.css">
+        <link rel="stylesheet" href="css/styleNav.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function aula2Decer(){
+                var submenu = document.getElementById('submenu1');
+                var submenu2 = document.getElementById('submenu2');
+                if(submenu.style.display == 'list-item'){
+                submenu.style.display = 'none';
+                submenu2.style.display = 'none';
+                }else{
+                submenu.style.display = 'list-item';
+                submenu2.style.display = 'list-item';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <nav id="nav">
+                <ul id="ul">
+                    <li id="li"><a id="a" href="/index.html">Inicio</a></li>
+                    <li id="li"><a id="a" href="../index.html">Modulo 1</a></li>
+                    <li id="li"><a id="a" href="#">Modulo 2</a></li>
+                    <li id="li"><a id="a" href="#">Modulo 3</a></li>
+                    <li id="li"><a id="a" href="#">Modulo 4</a></li>
+                    <li id="li"><a id="a" href="/prototipagem/index.html">Prototipagem</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <header class="introheader"> 
+                <h1>Olá mundo</h1> 
+                <h2>Bem vindo ao curso FullStack - Módulo 1</h2>
+            </header>
+        </div>
+        <div>
+            <section class="sessao">
+                <nav class="menunav">
+                    <ul class="menuul">
+                        <li class="li"><a class="menua"   href="../aula1/index.html">Aula 1</a></li><hr>    
+                        <li class="li"><a class="menua" onclick="aula2Decer()" href="#">Aula 2</a></li>
+                        <li id="submenu1" class="submenu"><a  class="menua" href="index.html">HTML</a></li>
+                        <li id="submenu2" class="submenu"><a  class="menua" href="pages/secondpart.html">CSS</a></li><hr>
+                        <li class="menuli"><a class="menua" href="">Aula 3</a></li><hr>
+                        <li class="menuli"><a class="menua" href="#">Aula 4</a></li><hr>
+                        <li class="menuli"><a class="menua" href="#">Aula 5</a></li><hr>
+                    </ul>
+                </nav>
+                <article>
+                    <h1 class="titulo">Aula 2 - HTML5</h1>
+                    <p>
+                        O HTML é a linguagem básica para cria de paginas Web(Versão HTML5). Esta nova versão traz 
+                        consigo importantes mudanças quanto ao papel do HTML no mundo da Web, através de novas 
+                        funcionalidades como semântica e acessibilidade. E vem com diversos suportes para 
+                        sistemas moveis, diversos dispositivos.
+                    </p>
+                    <br><hr><br>
+                    <p>
+                        Ele serve para definir toda estrutura da pagina, a organização,a semântica do documento
+                        e a indexação. E funciona em conjunto com o CSS para dar aparencia aos elementos como estilos,
+                        fontes, e cores. E com o JavaScript para deixa a pagina dinamicas, como por enviar conversas pelo
+                        chat, notificações em sites.
+                    </p>
+                    <br>
+                    <p>
+                        O HTML5 é um padrão aberto, criado por dois grupos:
+                        <ul class="list">
+                            <li>W3C - Word Wide Web Consortium</li>
+                            <a href="https://www.w3.org">W3c</a><br>
+                            <li>WHATWG - Web Hipertext Application Technology Working Group</li>
+                            <a href="https://html.spec.whatwg.org/multipage/">WHATWG</a>
+                        </ul><br>
+                    </p>
+                    <p>
+                        O W3C é o orgão que cuida das tecnologias Web, o HTML, o CSS, o JavaScript e os padrões dos 
+                        browser. Antigamente alguns browser como o internet explorer 6 da Microsoft, não seguiam
+                        os padrões do W3C. Por conta disto dificultava muito a programação para browsers desse estilos,
+                        era preciso programar uma pagina para esses browsers que não seguiam o padrão e uma pagina para
+                        as paginas que seguiam o padrão.
+                    </p>
+                    <p>
+                        O WHATWG é um grupo de trabalho de pessoas interessadas na evolução do HTML e as tecnologias 
+                        ligadas a tal. Diferente do independente World Wide Web Consortium (W3C) o WHATWG é mantido por
+                        pessoas ligadas a entidades e empresas como a Mozilla Foundation, Opera Software ASA e Apple Inc.
+                    </p>
+                    <p>
+                        Mais os dois juntos que define como será o HTML, e acompanhando os sites das duas organizações, 
+                        pode se ter ideia, de quais serão as novas tecnologias dos proximos HTML.
+                    </p>
+                    <br><hr><br>
+                    <p>
+                        Os principios do HTMl, é a não utilização de plugins pesados para exibir conteudo de paginas,
+                        e sim utilize o HTML junto com CSS e JavaScript, por que? Por conta que estes plugins aumentam
+                        a vunerabilidade da sua aplicação. 
+                    </p>
+                    <p>
+                        Com isso, você não consegue acessar dados mais sensiveis, como ter que fazer upload de arquivos,
+                        por conta que não tem acesso total ao c: do usuario, ou acessos a perifericos como web cam ou 
+                        microfone, fazendo solicitações para que isso aconteça.
+                    </p>
+                    <p>
+                        Um fator chave do HTML5 é que ele tem que ser multi plataforma, por conta do alto numero de acessos
+                        via smartphones, tables, e até mesmo smart TV.
+                    </p>
+                    <p>
+                        E com a utilização das 3 tecnologias, HTML, CSS e JavaScript para construir uma pagina é necessario 
+                        a organização de todas essa ligaguagem, para que se tenha um facil acesso e que consiga achar inconsistencias
+                        nos codigos e ter uma visão melhor no cresimento e manutenção da pagina.
+                    </p>
+                    <br><hr><br>
+                    <h1 class="titulo">Historia</h1>
+                    <p>
+                       Em 1989 a melhor forma de compartilhar informações era atraves de e-mail, grupos de noticias (newsgroup),
+                       e servidores ftp. Acessava atraves de um desse diversos documentos, a maoria desses documentos eram arquivos
+                       de textos, artigos. Mais para cada um desses protocolos tinha um Software especifico, oque dificultava mais ainda.
+                    </p>
+                    <p>
+                        Tim Berners-Lee propôs a ideia de Hiper textos, que era uma solução melhor, ele foi o idealizador do HTTP
+                        e também pelo HTML, na qual a linguagem de marcação para compartilhar os documentos usando formatação, com links, 
+                        graficos, diagramas.
+                    </p>
+                    <p>
+                        Antigamente era comum termos paginas como se fossem listas telefonicas, mais com links direcionando para outras
+                        paginas que tratavam de algum assunto especifico.
+                    </p>
+                    <p>
+                        No final do ano de 1989, ele propôs também um piloto de uma projeto, um lista de tags do html, que esta disponivel no link:
+                        <a href="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html">http://www.3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html</a>
+                        A proposta era um protocolo cliente/servidor para documentos hipertextos.
+                    </p>
+                    <p>
+                        O arquivo inicial possuia 18 tagspara definição e formatação de documentos. Neste documento contem as especificações de como seria,
+                        o link para o documento é: <a href="http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt">
+                            http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt</a>
+                    </p>
+                    <p>
+                        Em 19991 Berners-Lee publicou o primeiro Web browser, e em 1993 publicou uma biblioteca protável em C chamada de  libwww, que permitia 
+                        o parcer o a renderização das paginas usando HTML. Logo apos lançar o HTML. 
+                    </p>
+                    <br>
+                    <p>
+                        Devido essa liberação da criação de browsers, teve a guerra de browsers, mesmo a grande maioria utlzar o internet explorer. Apos o netscape
+                        não aguentar e fechar, eles liberaram o codigo fonte do todo navegador, fazendo com que surgise outros grandes navegadores como mozila, 
+                        mozila firefox, google chrome, depois google investir no motor v8, que é o motor JavaScript.
+                    </p>
+                    <p>
+                        O HTML é uma linguagem bem permissiva, pode se ver isso como por exemplo na tag de negrito, que caso não feche ela ela apenas irar deixa tudo
+                        negrito apartir do momento que abriu, mais não quebrara a pagina e deixara de exibir ela. No inicio o HTML era simplesmente para mostrar hipertextos
+                        para os usuario, como por exemplo os artigos cientificos, com as formatações deste esilos.
+                        Mais com o tempo surgiu a Web 2.0, que veio falar que a internet é muito poderosa, e por que não utilizar essa rede para fazer sites com as funcionalidades
+                        de sistemas, sem a nescesidade de intalação.
+                    </p>
+                    <br><hr><br>
+                    <h1 class="titulo">HTML5</h1>
+                    <p>
+                        Neste novo padrão temos a presença da mesma renderização da CPU, pelo openGL, tem o WGL, que nada mais é o browser renderiza na GPU, isto era imaginavel
+                        no HTML4. Com isto o HTML consegue um pequnos avanço, como por exemplo podemos rodar aqueles jogos diretamente no browser, claro que tem questões de
+                        instabilidade e performace, mais com o tempo isso pode e devera ser resolvido, excluindo a nescesidadede instalação de jogos pesados na maquina.
+                    </p>
+                    <p>
+                        Funcionalidades:
+                        <ul class="lsit">
+                            <li>Estruturação do texto</li>
+                            <li>Semântica do documento</li>
+                            <li>Validação de formulários</li>
+                            <li>Elemntos gráficos(WebGL)</li>
+                            <li>HTML5 Api:</li>
+                            Geolocalização, Drag and Drop, Armazenamento local, Web Workers, Cache.
+                        </ul>
+                    </p>
+                    <br><hr><br>
+                    <h1 class="titulo">Estrutura do HTML5</h1>
+                    <p>
+                        O HTML é uma linguagem de <b>marcação</b>, e não uma linguagem de programação.
+                        Em uma linguagem de programação é possivel criar programas complexos, que tomem 
+                        decisões, já no html não é possivel fazer isto.
+                    </p><br>
+                    <p>
+                        Os elementos do HTML são definos por Tag, a estrutura é definida por abertura e 
+                        fechamento das Tags, assim &lt;Tag&gt; &lt;/Tag&gt; e temos as Tag vazias que abre
+                        e fecha, assim &lt;TagVazia/&gt;,usada quando a Tag não tem conteudo, então nas 
+                        tag temos os tipos:
+                    </p>
+                    <pre>
+                        <ul class="list">
+                            <li>Abertura de Tag: &lt;Tag&gt;</li>
+                            <li>Fechamento de Tag: &lt;/Tag&gt;</li>
+                            <li>Tag Vazia: &lt;TagVazia/&gt;</li>
+                            <li>Comentários: &lt;!-- comentário  --&gt;</li>
+                        </ul>       
+                    </pre>
+                    <p>
+                        Apesar do HTML ser uma linguagem muito permissiva como dito anteriormente, como a maoria
+                        das linguagem existem as suas boas praticas, para que seu codigo seja mais legivel. Essas boas 
+                        praticas não inflenciam no funcionamento, apenas faz com que seu documento seja bem formavel,
+                        que é um documento que siga a sintaxe correta, e as boas praticas de organização.
+                    </p>
+                    <p>
+                        Algumas boas praticas são:
+                        <ul>
+                            <li>Todas as tag são sintaticamente corretas</li>
+                            ou seja toda tag aberta em letra minucula assim &lt;p&gt; deve ser fecada em minucula,
+                            assim &lt;/p&gt;, o mesmo se for maiuscula.
+                            <li>Todas as tags abertas precisam ser fechadas</li>
+                            podendo ser tags vazias que já fecham exemplo &lt;TagVazia/&gt;, mais todas as outras 
+                            precisam ser &lt;p&gt;Olá Mundo&lt;/p&gt;.
+                            <li>Todas os atributos devem ser delimitados com aspas</li>
+                            como o exemplo a imagem definida com um src, que é o caminho dela deve ser &lt;img src=""&gt;
+                            <li>As tags devem ser fechadas na ordem de sua abertura: </li>
+                            por exemplo o negrito que pode ser aberto asim usando o &lt;b&gt;, mais não é uma
+                            boa pratica usar assim &lt;b&gt;&lt;i&gt;&lt;/b&gt;&lt;/i&gt;, mais a boa pratica seria
+                            &lt;b&gt;&lt;i&gt;&lt;/i&gt;&lt;/b&gt;
+                        </ul>
+                    </p>
+                    <br><hr><br>
+                    <p>
+                        A seguir temos a estrutura basica para ter um arquivo HTML5:
+                    </p>
+                    <pre class="list">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="pt"&gt;
+                        &lt;head&gt; 
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;title&gt; Titulo do Documento &lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt; 
+                           Conteudo o site.
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <p>
+                        No começo do documento definos o formato do nosso documento de marcação 
+                        usando o &lt;!DOCTYPE html&gt;, ou colocando o &lt;!DOCTYPE xml&gt;, ou
+                        outro formato de marcação. 
+                    </p>                 
+                    <p>
+                        Na Tag html temos o lang como atributo para sinalizar o lingua do site,
+                        os pacotes de lingua não estão relacionados com o html, e sim com o navegador.
+                        O navegador não ira traduzir, so ira identificar que esta em portugues, ou qual
+                        qual lingua estiver. 
+                    </p>
+                    <p>
+                        Dentro no head colocamos a codificação de caracteres utilizando o &lt;meta charset="UTF-8"&gt;,
+                        por que não será sempre correto, por vaziações de editor de texto, ou sistema
+                        operacional, ou como salva, as vezes saira sem pontuação, ou com pontos de interogação.
+                    </p>
+                    <p>
+                        Alem disto podemos adicionar mais coisas, para faciliar a indexação e o usuario. Como
+                        por exemplo a acessibilidade, tipo um usuario com deficiencia visual, que ira precisar
+                        de um leitor de tela, que podera ler esses meta dados um deles é o charset, mais pode 
+                        se criar meta datos expecificos, como o keywords, que destaca as palavras chaves na indexação.
+                    </p>
+                    <pre class="list">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="pt"&gt;
+                        &lt;head&gt; 
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta charset="keywords" content="curso html uenp"/&gt;
+                            &lt;title&gt; Titulo do Documento &lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt; 
+                           Conteudo o site.
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <p><br>
+                        <ul>
+                            Elementos mais comuns:
+                            <li>&lt;!DOCTYPE&gt; html que é a declaração de um domumento HTML5</li>
+                            <li>&lt;head&gt; elemento da meta infotmações sobre a página</li>
+                            <li>&lt;body&gt; elemenento que define o corpo do documento, todo conteúdo visível</li>
+                            <li>&lt;title&gt; elemento mostra o título da página HTML</li>
+                            <li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; elementos de cabeçalho de diferentes tamanho</li>
+                            <li>&lt;p&gt; elemento que  define um parágrafo</li>
+                        </ul><br>
+                        para mais informações sobre HTML consultar: <a href="https://www.w3schools.com/html/default.asp">w3scools</a>
+                    </p>
+                    
+                    <br><hr><br>
+                </article>
+            </section>
+        </div>
+        <div>
+            <footer id="footer">
+                <p>A tag Footer é a estrutura de rodape da pagina html </p>
+                <p>Fonte: <a href="https://www.youtube.com/watch?v=354_V9FC58c&t=1742s">FullStack-CCT</a></p>
+            </footer>
+        </div>
+        
+    </body>
+</html>

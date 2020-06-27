@@ -1,0 +1,43 @@
+.frame{
+    border: solid gray 2px;
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.hori{
+    display: inline;
+    
+}
+
+.main{
+    width: 100%;
+    display: inline;
+    
+}
+
+.menu{
+    background-color: #000000;
+
+}
+
+.menu-hori{
+    width: 100%;
+}
+
+.menu-vet{
+    
+    width: 20%;
+
+}
+
+.conteudo{
+    background-color: #918f8f;
+    width: 70%;
+}
