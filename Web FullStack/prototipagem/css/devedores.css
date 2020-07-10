@@ -7,6 +7,10 @@ p.med{
     font-size: 9mm;
 }
 
+.inserircpf{
+    width: 40%;
+    margin-left: 30%;
+}
 
 @media only screen and (max-width: 1400px) {
     p.med{
@@ -19,3 +23,4 @@ p.med{
     p.med{
         font-size: 6mm;
     }
+}

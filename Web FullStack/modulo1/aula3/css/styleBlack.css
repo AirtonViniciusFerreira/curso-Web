@@ -1,7 +1,6 @@
 .sessao{
     display: table;
-    background-color: rgb(133, 219, 99);
-    width: 100%;  
+    background-color: #292929;  
               
 }
 
@@ -12,18 +11,19 @@
 .menunav{
     width: 10%; 
     min-height: 750px;    
-    background-color: rgb(181, 221, 165);
+    background-color: #2e2e2e;
     font-size: 20px;
     border: solid;
     float: left;
-    margin-right: 10px;           
+    margin-right: 10px; 
+    border: 1px solid #6b6767;          
 }
 
 .menuul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: rgb(0, 0, 0);
+
 }
 
 .menuli{
@@ -32,13 +32,14 @@
 
 .menua{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #2e9e02;
 }
 
 article{
     width: 80%;
     float: left;
-    background-color: rgb(133, 219, 99);
+    background-color: #292929;
+    color: #ffffff;
 }
 
 article p{

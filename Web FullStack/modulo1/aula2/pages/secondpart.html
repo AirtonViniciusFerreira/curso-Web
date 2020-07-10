@@ -2,9 +2,11 @@
 <html lang="pt">
     <head>
         <meta charset="UTF-8">
-        <title>Modulo 1 - Aula 2</title>
+        <title>Módulo 1 - Aula 2</title>
         <link rel="stylesheet" href="../css/styleIndex.css">
         <link rel="stylesheet" href="../css/styleNav.css">
+        <link rel="stylesheet" href="../css/styleTable.css">
+        <link rel="stylesheet" href="../css/styleblocks.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script>
             function aula2Decer(){
@@ -27,10 +29,10 @@
         <div>
             <nav id="nav">
                 <ul id="ul">
-                    <li id="li"><a id="a" href="/index.html">Inicio</a></li>
-                    <li id="li"><a id="a" href="../index.html">Modulo 1</a></li>
-                    <li id="li"><a id="a" href="/modulo2/index.html">Modulo 2</a></li>                  
-                    <li id="li"><a id="a" href="#">Modulo 3</a></li>
+                    <li id="li"><a id="a" href="/index.html">Início</a></li>
+                    <li id="li"><a id="a" href="../../index.html">Módulo 1</a></li>
+                    <li id="li"><a id="a" href="/modulo2/index.html">Módulo 2</a></li>                  
+                    <li id="li"><a id="a" href="/modulo3/index.html">Módulo 3</a></li>
                     <li id="li"><a id="a" href="/prototipagem/index.html">Prototipagem</a></li>
                 </ul>
             </nav>
@@ -38,257 +40,336 @@
         <div>
             <header class="introheader"> 
                 <h1>Olá mundo</h1> 
-                <h2>Bem vindo ao curso FullStack - Módulo 1</h2>
+                <h2>Bem-vindo ao curso FullStack - Módulo 1</h2>
             </header>
         </div>
         <div>
             <section class="sessao">
                 <nav class="menunav">
                     <ul class="menuul">
-                        <li class="li"><a class="menua"   href="../../aula1/index.html">Aula 1</a></li><hr>    
-                        <li class="li"><a class="menua" onclick="aula2Decer()" href="#">Aula 2</a></li>
+                        <li class="menuli"><a class="menua"   href="../../aula1/index.html">Aula 1</a></li><hr>    
+                        <li class="menuli"><a class="menua" onclick="aula2Decer()" href="#">Aula 2</a></li>
                         <li id="submenu1" class="submenu"><a  class="menua" href="../index.html">HTML</a></li>
                         <li id="submenu2" class="submenu"><a  class="menua" href="secondpart.html">CSS</a></li>
-                        <li id="submenu3" class="submenu"><a  class="menua" href="#">Pratica</a></li><hr>
+                        <li id="submenu3" class="submenu"><a  class="menua" href="thirdpart.html">Prática</a></li><hr>
                         <li class="menuli"><a class="menua" href="../../aula3/index.html">Aula 3</a></li><hr>
-                        <li class="menuli"><a class="menua" href="#">Aula 4</a></li><hr>
+                        <li class="menuli"><a class="menua" href="../../aula4/index.html">Aula 4</a></li><hr>
                     </ul>
                 </nav>
                 <article>
                     <h1 class="titulo">Aula 2 - CSS</h1>
                     <p>
-                        Em Contrução
+                        Agora vamos ver como organizar os documentos e deixá-los mais bonitos. O CSS (Cascading Style Sheets)
+                        define os padrões de formatação do documento, a tipografia, as fontes, tamanho dos elementos, imagens,
+                        os layouts e até mesmo animações.
                     </p>
                     <br><hr><br>
+                    <h1 class="titulo">História</h1>
                     <p>
-                        Ele serve para definir toda estrutura da pagina, a organização,a semântica do documento
-                        e a indexação. E funciona em conjunto com o CSS para dar aparencia aos elementos como estilos,
-                        fontes, e cores. E com o JavaScript para deixa a pagina dinamicas, como por enviar conversas pelo
-                        chat, notificações em sites.
-                    </p>
-                    <br>
-                    <p>
-                        O HTML5 é um padrão aberto, criado por dois grupos:
-                        <ul class="list">
-                            <li>W3C - Word Wide Web Consortium</li>
-                            <a href="https://www.w3.org">W3c</a><br>
-                            <li>WHATWG - Web Hipertext Application Technology Working Group</li>
-                            <a href="https://html.spec.whatwg.org/multipage/">WHATWG</a>
-                        </ul><br>
+                        O CSS não veio junto com o HTML, depois de um tempo usando a formatação do HTML, surgiu a necessidade
+                        de especificação de fazer isto de forma separada, para que possa ter o reuso, a organização e a facilidade
+                        de construção, como por exemplo, para mudar todos elementos "h1" de uma página era necessário ir um por um,
+                        e mudar com o CSS é possivel mudar todos de uma só vez. Então em 1996 o CSS level 1 for publicado.
                     </p>
                     <p>
-                        O W3C é o orgão que cuida das tecnologias Web, o HTML, o CSS, o JavaScript e os padrões dos 
-                        browser. Antigamente alguns browser como o internet explorer 6 da Microsoft, não seguiam
-                        os padrões do W3C. Por conta disto dificultava muito a programação para browsers desse estilos,
-                        era preciso programar uma pagina para esses browsers que não seguiam o padrão e uma pagina para
-                        as paginas que seguiam o padrão.
+                        Com as guerras dos browsers, no início tinha browser que implementava essa especificação do CSS e alguns não
+                        implementava, e alguns eram diferentes e tinham algumas mudanças, e até hoje o CSS é um grande problema, com
+                        algumas especificações como degrade que é nova e tem estruturação específica para o mozila e outra para o chrome.
                     </p>
                     <p>
-                        O WHATWG é um grupo de trabalho de pessoas interessadas na evolução do HTML e as tecnologias 
-                        ligadas a tal. Diferente do independente World Wide Web Consortium (W3C) o WHATWG é mantido por
-                        pessoas ligadas a entidades e empresas como a Mozilla Foundation, Opera Software ASA e Apple Inc.
+                        Antigamente as formatações precisavam estar em todas as tags que desejava, por não ter uma especificação do tipo
+                        classe que tem no CSS. As formatações eram assim:
+                    </p>
+<pre class="list">
+    &lt;font face="verdan&gt;Isso é algum texto&lt;/font&gt;
+    &lt;center&gt;O texto será alinhado ao centro&lt;/center&gt;
+    &lt;html bgcolor=#f43a55 color#000000&gt; &lt;/html&gt;
+</pre>
+                    <br><hr><br>
+                    <h1 class="titulo">Interação CSS e HTML</h1>
+                    <p>
+                        A interação acontece através de estilos que se coloca no HTML. Há três maneiras de colocar 
+                        esse estilos, sendo: colocando o atributo style dentro da tag que deseja por o estilo e 
+                        coloca um estilo apenas; caso tenha mais de um estilo  coloca a tag style no documento 
+                        lá em cima na dentro da tag head &lt;style&gt; aqui vão os estilos &lt;/style&gt;; ou 
+                        se não usar a tag link para referenciar outro documento com extensão .css para a 
+                        reutilização desses estilos a tag é a &lt;link rel="stylesheet" href="style.css"&gt;.
+                    </p>
+                    <p>Exemplo de estilo como atributo:</p>
+<pre class="list">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt"&gt;
+    &lt;head&gt; 
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt; Título do Documento &lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+<p class="pexemploT">   &lt;p style="color: #002fff;"&gt;
+            Este é um exemplo usando
+            estilo como atributo que
+            será apenas um estilo aplicado.
+        &lt;/p&gt;</p>                               
+        &lt;p&gt;
+            Então este parágrafo não
+            terá o mesmo estilo que o
+            de cima a nao ser que coloque
+            o style neste também. 
+        &lt;/p&gt;
+        &lt;p&gt;
+            E este também não terá o estilo
+        &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</pre>
+                    <p>Exemplo de um estilo no início do documento dentro do head</p>
+<pre class="list">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt"&gt;
+    &lt;head&gt; 
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt; Título do Documento &lt;/title&gt;
+        &lt;style&gt;
+            p{
+                color: #ff0000;
+                font-family: serif;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+<p class="pexemplo" >   &lt;p&gt;
+                Este exemplo está definido
+                o estilo do parágrafo,
+                na tag head.
+            &lt;/p&gt;</p>
+<p class="pexemplo"     >&lt;p&gt;
+                Então todos os parágrafos
+                feitos, terão a cor vermelha
+                e terão a fonte serif. 
+            &lt;/p&gt;</p>
+<p class="pexemplo">    &lt;p&gt;
+                E até esse parágrafo.
+            &lt;/p&gt;</p>
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                    <p>Exemplo de um estilo usando o link para chamar outro arquivo .css</p>
+<pre class="list">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt"&gt;
+    &lt;head&gt; 
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt; Título do Documento &lt;/title&gt;
+        &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt; 
+<p class="pexemlin">    &lt;p&gt;
+            Este exemplo está definido
+            o estilo do parágrafo, no
+            arquivo de css separado.
+        &lt;/p&gt;</p>
+<p class="pexemlin">    &lt;p&gt;
+            Então todos os parágrafos
+            feitos, terão a cor marrom
+            e terão a fonte monospace. 
+        &lt;/p&gt;</p>
+<p class="pexemlin">    &lt;p&gt;
+            E até esse parágrafo.
+        &lt;/p&gt;</p>
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                    <p>
+                        O arquivo style.css:
+                    </p>
+<pre class="list">
+    p{
+        color: #8b4513;
+        font-size: 25px;
+        font-family: monospace;
+    }
+</pre>
+                    <br><hr><br>
+                    <h1 class="titulo">Sintaxe</h1>
+                    <p>
+                        O seletor é um conjunto de regras  que termina a formatação do elemento,
+                        temos o seletor que usa na tag style e no arquivo de estilo.css, e temos
+                        o seletor do atributo style diretamente na tag, porém não é recomendado 
+                        no caso de mais de um estilo ou mais de uma tag igual.
                     </p>
                     <p>
-                        Mais os dois juntos que define como será o HTML, e acompanhando os sites das duas organizações, 
-                        pode se ter ideia, de quais serão as novas tecnologias dos proximos HTML.
+                        Este é o seletor da tag style ou no arquivo, e como podemos ver usa o ponto
+                        e vírgula para ir a para próxima instrução como é usado normalmente em desenvovimentos.
+                        E pode ser reduzido tudo a uma linha também como mostrado na segunda
+                        forma, mas para facilitar a leitura usa a primeira forma.
+                    </p>
+<pre class="list">    
+    seletor{
+        regra1;
+        regra2;
+        ...
+        regraN;
+    }
+
+    seletor{ regra1; regra2; ... regraN; }    
+</pre><br>
+                    <p>
+                        Já no atributo da tag usando o style=" ", para atribuir os estilos, normalmente usado para
+                        casos no qual é apenas um estilo, e se for apenas para aquela tag em especifico. Mas também
+                        funcionará caso coloque mais de um estilo como no segundo exemplo:
+                    </p>
+<pre class="list">
+    &lt;tag style="regra1;"&gt;
+    &lt;tag style="regra1; rega2; ... regraN"&gt;
+</pre><br>
+                    <p>
+                        O seletores de elementos define a formatação para todos os elementos daquele tipo, por tanto
+                        se colcoar um seletor "h1", "p", "section" e "pre", ele formatará todos os elementos para 
+                        aquele determinado estilo, como nos exemplos a seguir que muda todos h1 e todos p:
+                    </p>
+<pre class="list">
+    h1{color: blue; font-size:12px}
+
+    p{
+        text-align: center;
+        color: blue;
+        font-size: 16px;
+    }
+</pre>
+                    <p>
+                        Temos o seletor do ID's onde eu crio uma tag, e coloco um nome para eles, uma regra de um 
+                        documento bem formado, não pode conter mais de uma tag com o mesmo nome, mas não é obrigado
+                        a identificar todas as tags, mas se quiser identificar poderá colocar um estilo para aquela 
+                        tag com quele nome. 
+                    </p>
+                    <p>
+                        Para usar o seletor do ID basta colocar #botaoEnviar{regra1;}, o hashtag (#) indica que aquele seletor é
+                        referenciado ao ID que está na frente do #.Para colocar o id basta inserir o atributo id="nome da tag" 
+                        dentro da tag, assim &lt;tag id="botaoEnviar"&gt;.Então ficaria assim:
+                    </p>
+<pre class="list">
+    &lt;style&gt;
+        #botaoEnviar{
+            color: red;
+        }
+    &lt;/style&gt;
+    &lt;button id="botaoEnviar"&gt;Enviar&lt;/button&gt;
+</pre>
+                    <p>
+                        Outro seletor que é um dos mais utilizados hoje em dia é o seletor de classes, para criar uma classe basta 
+                        colocar o ponto (.) antes do nome da classe assim .nomeClasse{regra1; regra2;}, a classe nada mais é do que um
+                        apelido para a tag, para usá-la na tag, utiliza-se o atributo class="" dentro da tag desejada. Como no exemplo:
+                    </p>
+<pre class="list">
+    &lt;style&gt;
+        .error{
+        color: red;
+        }
+    &lt;/style&gt;
+    &lt;h1 class="error"&gt;ocorreu um erro&lt;h1&gt;
+    &lt;span class="error"&gt;
+        o erro deve ser corrigido&lt;span&gt;
+</pre><br>
+                    <p>
+                        Diferente do ID a classe pode ser utilizada várias vezes no documento,
+                        então pode ser reutilizada em diversas tags e podemos colocar até mais de 
+                        uma classe caso o elemento possua estilos de uma ou mais classes.
                     </p>
                     <br><hr><br>
+                    <h1 class="titulo">Formatação dos Componentes</h1>
                     <p>
-                        Os principios do HTMl, é a não utilização de plugins pesados para exibir conteudo de paginas,
-                        e sim utilize o HTML junto com CSS e JavaScript, por que? Por conta que estes plugins aumentam
-                        a vunerabilidade da sua aplicação. 
+                        Temos o box model que é a forma como será mostrada suas caixas de elementos,
+                        e podemos ter em inline, que são elementos de fluxo que segue o fluxo do 
+                        texto e quebra a linha no final da tela, já no block, elementos de blocos,
+                        ele irá pular de linha e ficará embaixo.
+                    </p>
+                    <img class="imagem" src="../img/inlineBlock.png" alt="Inline e Block">
+                    <ul>Exemplo em Inline<br>                 
+                        <li class="exemploRed exemploInline">display: inline</li>
+                        <li class="exemploBlue exemploInline">display: inline</li>
+                        <li class="exemploBlack exemploInline">display: inline</li>
+                        <li class="exemploRed exemploInline">display: inline</li>
+                        <li class="exemploBlue exemploInline">display: inline</li>
+                        <li class="exemploBlack exemploInline">display: inline</li>
+                    </ul><br>
+                    <ul>Exemplo em Block<br>
+                        <li class="exemploRed exemploBlock">display: block</li>
+                        <li class="exemploBlue exemploBlock">display: block</li>
+                        <li class="exemploBlack exemploBlock">display: block</li>
+                        <li class="exemploRed exemploBlock">display: block</li>
+                        <li class="exemploBlue exemploBlock">display: block</li>
+                        <li class="exemploBlack exemploBlock">display: block</li>
+                    </ul><br>
+                    <p>
+                        O box model temos os esquemas de caixa, tendo altura e largura,
+                        o width é a largura, e o height é a altura da caixa. A caixa tem 
+                        os elementos padding, que é a distância do conteúdo até a borda. 
+                        Border é a borda da caixa, que fica entre o padding e a margin. 
+                        Margin é a margem que é a última camada da caixa que fica depois 
+                        da borda. Todos esses elementos, padding, border, margin terão 
+                        todos os lados, direita (rigth), esquerda (left), cima (top),
+                        baixo (bottom), e pode ser acessados separadamente.
                     </p>
                     <p>
-                        Com isso, você não consegue acessar dados mais sensiveis, como ter que fazer upload de arquivos,
-                        por conta que não tem acesso total ao c: do usuario, ou acessos a perifericos como web cam ou 
-                        microfone, fazendo solicitações para que isso aconteça.
+                        Para acessar esses elementos basta colocar no style o elemento-direção,
+                        como por exemplo margin-top: 10px, fará com que apenas a margem de cima 
+                        tenha 10 pixel, caso queira deixar todos iguais, coloque apenas o elemento,
+                        assim margin 10px, agora todos os lados da margem tem 10 pixel. 
                     </p>
-                    <p>
-                        Um fator chave do HTML5 é que ele tem que ser multi plataforma, por conta do alto numero de acessos
-                        via smartphones, tables, e até mesmo smart TV.
-                    </p>
-                    <p>
-                        E com a utilização das 3 tecnologias, HTML, CSS e JavaScript para construir uma pagina é necessario 
-                        a organização de todas essa ligaguagem, para que se tenha um facil acesso e que consiga achar inconsistencias
-                        nos codigos e ter uma visão melhor no cresimento e manutenção da pagina.
-                    </p>
+                    <img class="imagem" src="../img/boxModel.png" alt="Box Model">
                     <br><hr><br>
-                    <h1 class="titulo">Historia</h1>
+                    <h1 class="titulo">Unidades no CSS</h1>
                     <p>
-                       Em 1989 a melhor forma de compartilhar informações era atraves de e-mail, grupos de noticias (newsgroup),
-                       e servidores ftp. Acessava atraves de um desse diversos documentos, a maoria desses documentos eram arquivos
-                       de textos, artigos. Mais para cada um desses protocolos tinha um Software especifico, oque dificultava mais ainda.
+                       A unidade de medida é uma das dificudades em css, por conta da diferença das
+                       resoluções da tela, podem ter alterações enormes caso use a unidade de
+                       centímetro, ela é usada normalmente para papel, formatação de documentos
+                       impressos, assim teria uma precissão maior. Mas para as resoluções da tela
+                       utilizamos em pixel ou porcentagem.
                     </p>
                     <p>
-                        Tim Berners-Lee propôs a ideia de Hiper textos, que era uma solução melhor, ele foi o idealizador do HTTP
-                        e também pelo HTML, na qual a linguagem de marcação para compartilhar os documentos usando formatação, com links, 
-                        graficos, diagramas.
+                        Temos duas categorias de unidades: as unidades Absolutas e as unidades Relativas.
                     </p>
                     <p>
-                        Antigamente era comum termos paginas como se fossem listas telefonicas, mais com links direcionando para outras
-                        paginas que tratavam de algum assunto especifico.
+                        As unidades Absolutas, são as unidades que usamos mais no dia a dia, como 
+                        centímetro, milímetro, polegada, pixel, ponto, paica. Como mostramos no exemlo.
+                    </p>
+                    <table class="tabela">
+                        <tr class="colunaNome">
+                            <th class="linhaNome">Unidade</th><th class="linhaNome">Descrição</th>
+                        </tr>
+                        <tr class="">
+                            <td class="linha">cm</td><td class="linha">Centímetro</td>
+                        </tr>
+                        <tr class="coluna">
+                            <td class="linha">mm</td><td class="linha">Milímetro</td>
+                        </tr>
+                        <tr class="">
+                            <td class="linha">in</td><td class="linha">Polegada</td>
+                        </tr>
+                        <tr class="coluna">
+                            <td class="linha">px</td><td class="linha">Pixel</td>
+                        </tr>
+                        <tr class="">
+                            <td class="linha">pt</td><td class="linha">Ponto</td>
+                        </tr>
+                        <tr class="coluna">
+                            <td class="linha">pc</td><td class="linha">Paica (4,23mm)</td>
+                        </tr>
+                    </table>
+                    <p>
+                        As unidades relativas estão relacionadas com tamanho. Temos a "porcentagem",
+                        o "em" que está relacionada com a fonte que foi escolhida pegando a letra M 
+                        da fonte escolhida, e o "vh".
                     </p>
                     <p>
-                        No final do ano de 1989, ele propôs também um piloto de uma projeto, um lista de tags do html, que esta disponivel no link:
-                        <a href="http://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html">http://www.3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html</a>
-                        A proposta era um protocolo cliente/servidor para documentos hipertextos.
+                        Para mais informações consultar: <a href="https://www.w3schools.com/css/default.asp">w3schools</a>
                     </p>
-                    <p>
-                        O arquivo inicial possuia 18 tagspara definição e formatação de documentos. Neste documento contem as especificações de como seria,
-                        o link para o documento é: <a href="http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt">
-                            http://www.w3.org/MarkUp/draft-ietf-iiir-html-01.txt</a>
-                    </p>
-                    <p>
-                        Em 19991 Berners-Lee publicou o primeiro Web browser, e em 1993 publicou uma biblioteca protável em C chamada de  libwww, que permitia 
-                        o parcer o a renderização das paginas usando HTML. Logo apos lançar o HTML. 
-                    </p>
-                    <br>
-                    <p>
-                        Devido essa liberação da criação de browsers, teve a guerra de browsers, mesmo a grande maioria utlzar o internet explorer. Apos o netscape
-                        não aguentar e fechar, eles liberaram o codigo fonte do todo navegador, fazendo com que surgise outros grandes navegadores como mozila, 
-                        mozila firefox, google chrome, depois google investir no motor v8, que é o motor JavaScript.
-                    </p>
-                    <p>
-                        O HTML é uma linguagem bem permissiva, pode se ver isso como por exemplo na tag de negrito, que caso não feche ela ela apenas irar deixa tudo
-                        negrito apartir do momento que abriu, mais não quebrara a pagina e deixara de exibir ela. No inicio o HTML era simplesmente para mostrar hipertextos
-                        para os usuario, como por exemplo os artigos cientificos, com as formatações deste esilos.
-                        Mais com o tempo surgiu a Web 2.0, que veio falar que a internet é muito poderosa, e por que não utilizar essa rede para fazer sites com as funcionalidades
-                        de sistemas, sem a nescesidade de intalação.
-                    </p>
-                    <br><hr><br>
-                    <h1 class="titulo">HTML5</h1>
-                    <p>
-                        Neste novo padrão temos a presença da mesma renderização da CPU, pelo openGL, tem o WGL, que nada mais é o browser renderiza na GPU, isto era imaginavel
-                        no HTML4. Com isto o HTML consegue um pequnos avanço, como por exemplo podemos rodar aqueles jogos diretamente no browser, claro que tem questões de
-                        instabilidade e performace, mais com o tempo isso pode e devera ser resolvido, excluindo a nescesidadede instalação de jogos pesados na maquina.
-                    </p>
-                    <p>
-                        Funcionalidades:
-                        <ul class="lsit">
-                            <li>Estruturação do texto</li>
-                            <li>Semântica do documento</li>
-                            <li>Validação de formulários</li>
-                            <li>Elemntos gráficos(WebGL)</li>
-                            <li>HTML5 Api:</li>
-                            Geolocalização, Drag and Drop, Armazenamento local, Web Workers, Cache.
-                        </ul>
-                    </p>
-                    <br><hr><br>
-                    <h1 class="titulo">Estrutura do HTML5</h1>
-                    <p>
-                        O HTML é uma linguagem de <b>marcação</b>, e não uma linguagem de programação.
-                        Em uma linguagem de programação é possivel criar programas complexos, que tomem 
-                        decisões, já no html não é possivel fazer isto.
-                    </p><br>
-                    <p>
-                        Os elementos do HTML são definos por Tag, a estrutura é definida por abertura e 
-                        fechamento das Tags, assim &lt;Tag&gt; &lt;/Tag&gt; e temos as Tag vazias que abre
-                        e fecha, assim &lt;TagVazia/&gt;,usada quando a Tag não tem conteudo, então nas 
-                        tag temos os tipos:
-                    </p>
-                    <pre>
-                        <ul class="list">
-                            <li>Abertura de Tag: &lt;Tag&gt;</li>
-                            <li>Fechamento de Tag: &lt;/Tag&gt;</li>
-                            <li>Tag Vazia: &lt;TagVazia/&gt;</li>
-                            <li>Comentários: &lt;!-- comentário  --&gt;</li>
-                        </ul>       
-                    </pre>
-                    <p>
-                        Apesar do HTML ser uma linguagem muito permissiva como dito anteriormente, como a maoria
-                        das linguagem existem as suas boas praticas, para que seu codigo seja mais legivel. Essas boas 
-                        praticas não inflenciam no funcionamento, apenas faz com que seu documento seja bem formavel,
-                        que é um documento que siga a sintaxe correta, e as boas praticas de organização.
-                    </p>
-                    <p>
-                        Algumas boas praticas são:
-                        <ul>
-                            <li>Todas as tag são sintaticamente corretas</li>
-                            ou seja toda tag aberta em letra minucula assim &lt;p&gt; deve ser fecada em minucula,
-                            assim &lt;/p&gt;, o mesmo se for maiuscula.
-                            <li>Todas as tags abertas precisam ser fechadas</li>
-                            podendo ser tags vazias que já fecham exemplo &lt;TagVazia/&gt;, mais todas as outras 
-                            precisam ser &lt;p&gt;Olá Mundo&lt;/p&gt;.
-                            <li>Todas os atributos devem ser delimitados com aspas</li>
-                            como o exemplo a imagem definida com um src, que é o caminho dela deve ser &lt;img src=""&gt;
-                            <li>As tags devem ser fechadas na ordem de sua abertura: </li>
-                            por exemplo o negrito que pode ser aberto asim usando o &lt;b&gt;, mais não é uma
-                            boa pratica usar assim &lt;b&gt;&lt;i&gt;&lt;/b&gt;&lt;/i&gt;, mais a boa pratica seria
-                            &lt;b&gt;&lt;i&gt;&lt;/i&gt;&lt;/b&gt;
-                        </ul>
-                    </p>
-                    <br><hr><br>
-                    <p>
-                        A seguir temos a estrutura basica para ter um arquivo HTML5:
-                    </p>
-                    <pre class="list">
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="pt"&gt;
-                        &lt;head&gt; 
-                            &lt;meta charset="UTF-8"&gt;
-                            &lt;title&gt; Titulo do Documento &lt;/title&gt;
-                        &lt;/head&gt;
-                        &lt;body&gt; 
-                           Conteudo o site.
-                        &lt;/body&gt;
-                        &lt;/html&gt;
-                    </pre>
-                    <p>
-                        No começo do documento definos o formato do nosso documento de marcação 
-                        usando o &lt;!DOCTYPE html&gt;, ou colocando o &lt;!DOCTYPE xml&gt;, ou
-                        outro formato de marcação. 
-                    </p>                 
-                    <p>
-                        Na Tag html temos o lang como atributo para sinalizar o lingua do site,
-                        os pacotes de lingua não estão relacionados com o html, e sim com o navegador.
-                        O navegador não ira traduzir, so ira identificar que esta em portugues, ou qual
-                        qual lingua estiver. 
-                    </p>
-                    <p>
-                        Dentro no head colocamos a codificação de caracteres utilizando o &lt;meta charset="UTF-8"&gt;,
-                        por que não será sempre correto, por vaziações de editor de texto, ou sistema
-                        operacional, ou como salva, as vezes saira sem pontuação, ou com pontos de interogação.
-                    </p>
-                    <p>
-                        Alem disto podemos adicionar mais coisas, para faciliar a indexação e o usuario. Como
-                        por exemplo a acessibilidade, tipo um usuario com deficiencia visual, que ira precisar
-                        de um leitor de tela, que podera ler esses meta dados um deles é o charset, mais pode 
-                        se criar meta datos expecificos, como o keywords, que destaca as palavras chaves na indexação.
-                    </p>
-                    <pre class="list">
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="pt"&gt;
-                        &lt;head&gt; 
-                            &lt;meta charset="UTF-8"&gt;
-                            &lt;meta charset="keywords" content="curso html uenp"/&gt;
-                            &lt;title&gt; Titulo do Documento &lt;/title&gt;
-                        &lt;/head&gt;
-                        &lt;body&gt; 
-                           Conteudo o site.
-                        &lt;/body&gt;
-                        &lt;/html&gt;
-                    </pre>
-                    <p><br>
-                        <ul>
-                            Elementos mais comuns:
-                            <li>&lt;!DOCTYPE&gt; html que é a declaração de um domumento HTML5</li>
-                            <li>&lt;head&gt; elemento da meta infotmações sobre a página</li>
-                            <li>&lt;body&gt; elemenento que define o corpo do documento, todo conteúdo visível</li>
-                            <li>&lt;title&gt; elemento mostra o título da página HTML</li>
-                            <li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; elementos de cabeçalho de diferentes tamanho</li>
-                            <li>&lt;p&gt; elemento que  define um parágrafo</li>
-                        </ul><br>
-                        para mais informações sobre HTML consultar: <a href="https://www.w3schools.com/html/default.asp">w3scools</a>
-                    </p>
-                    
-                    <br><hr><br>
                 </article>
             </section>
         </div>
         <div>
             <footer id="footer">
-                <p>A tag Footer é a estrutura de rodape da pagina html </p>
-                <p>Fonte: <a href="https://www.youtube.com/watch?v=354_V9FC58c&t=1742s">FullStack-CCT</a></p>
+                <p>A tag Footer é a estrutura de rodapé da página HTML </p>
+                <p>Fonte: <a href="https://www.youtube.com/watch?v=6RoRnY-VKKM&t=765s">FullStack-CCT</a></p>
             </footer>
         </div>
         

@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devedores</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css">
     <link rel="stylesheet" href="/prototipagem/css/index.css">
     <link rel="stylesheet" href="/prototipagem/css/devedores.css">
+    
     <style>
         .tabela{
             display: none;
         }
+
+
     </style>
 </head>
 <body>
     <header class="menu">
         <div class="navbar navbar-expand-lg">        
             <div class="row">
-                <div class="col-lg"> <a class="logo-text btn-dark btn btn-lg" href="/prototipagem/index.html">XYZ</a> </div>              
-                <div class="col-lg"> <a class="btn-dark btn btn-lg" href="/prototipagem/pages/devedores.html">Devedores</a> </div>
-                <div class="col-lg"> <a class="btn-dark btn btn-lg" href="/prototipagem/pages/pagamentos.html">Pagamentos</a> </div>
+                <div class="col-sm-2"> <a class="logo-text btn-dark btn btn-lg" href="/prototipagem/index.html">XYZ</a> </div>
+                <div class="col-sm-2"> <a class="btn-dark btn btn-lg" href="/index.html">Inicio</a></div>              
+                <div class="col-sm-3"> <a class="btn-dark btn btn-lg" href="/prototipagem/pages/devedores.html">Devedores</a> </div>
+                <div class="col-sm-4"> <a class="btn-dark btn btn-lg" href="/prototipagem/pages/pagamentos.html">Pagamentos</a> </div>
             </div> 
         </div>
     </header>
@@ -33,24 +39,27 @@
                 <div>
                     <p class="med">Insira o CPF ou CNPJ para o qual quer buscar as inadimplências</p>
                 </div>
-                <form action="#">
+                <form class="form-inline" method="GET" action="#">
                     <div class="container">
                         <div class="row"> 
                             <div class="col">
                                 <p class="paragrafo medio">CPF/CNPJ: </p>
-                                <input type="text" id="cpf" name="cpf" value="Insira o CPF ou CNPJ">
+                                <input type="text" id="cpf" name="cpf"  class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00">
+                                <button id="enviar" class="btn btn-primary" type="submit">Procurar</button>
                             </div>  
                         </div>
-                    </div>
+                    </div> 
                     <div class="row">
-                        <div class="col">
-                            <button class="botao btn btn-primary" onclick="mostrar()">Procurar</button>
+                        <div class="col">         
+                            
                         </div>
-                    </div>
+                    </div>          
                 </form>
+               
             </div>
         </section>
-        <section>
+        <section id="tabe" class="tabela">
+            <h1 id="negativado" class="h1-center"></h1>
             <table id="tabela" class="table table-dark tabela">
                 <THead>
                     <tr>
@@ -98,16 +107,15 @@
 
     <footer class="text-muted rodape"> 
         <div class="container">
-            <p> Este é um exemplo de um prototipo, de um sistema de inadimplentes 
+            <p> Este é um exemplo de um prototipo, de um sistema 
                 para fazer consultas e  inserir inadimplentes.</p>
         </div>
     </footer>
 
-    <script>
-        function mostrar(){
-            document.getElementById('tabela').style.display = 'table';
-        }
-    </script>
+    <script src="../js/list.js"></script>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

@@ -1,0 +1,38 @@
+.tabela{
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px dotted #000000;
+    background-color: #888787;
+    color: #ffffff;
+    margin-left: 25%;
+}
+
+.linha{
+    border: 1px solid #000000;
+    text-align: left;
+    
+}
+
+.linhaNome{
+    border: 1px solid #ffffff;
+}
+
+.colunaNome{
+    background-color: #000000;
+    text-align: center;
+}
+
+.coluna{
+    background-color: #4d4d4d;
+}
+
+@media(max-width:1100px){
+    .tabela{
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+@media(max-width:600px){
+
+}
