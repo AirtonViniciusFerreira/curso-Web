@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta id="meta" charset="UTF-8">
+        <title>Modulo 1 - Aula 2</title>
+        <link id="tema" rel="stylesheet" href="../aula2/css/styleIndex.css">
+        <link id="tema1" rel="stylesheet" href="../aula2/css/styleNav.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/styleBtn.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function aula3Decer(){
+                var submenu = document.getElementById('submenu1');
+                var submenu2 = document.getElementById('submenu2');
+                var submenu3 = document.getElementById('submenu3');
+                if(submenu.style.display == 'list-item'){
+                    submenu.style.display = 'none';
+                    submenu2.style.display = 'none';
+                    submenu3.style.display = 'none';
+                }else{
+                    submenu.style.display = 'list-item';
+                    submenu2.style.display = 'list-item';
+                    submenu3.style.display = 'list-item';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <nav id="nav">
+                <ul id="ul">
+                    <li id="li"><a id="a" href="/index.html">Início</a></li>
+                    <li id="li"><a id="a" href="../index.html">Módulo 1</a></li>
+                    <li id="li"><a id="a" href="/modulo2/index.html">Módulo 2</a></li>
+                    <li id="li"><a id="a" href="/modulo3/index.html">Módulo 3</a></li>
+                    <li id="li"><a id="a" href="/prototipagem/index.html">Prototipagem</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <header class="introheader"> 
+                <h1>Olá mundo</h1> 
+                <h2>Bem-vindo ao curso FullStack - Módulo 1</h2>
+            </header>
+        </div>
+        <div>
+            <section class="sessao">
+                <nav class="menunav">
+                    <ul class="menuul">
+                        <li class="menuli"><a class="menua" href="../aula1/index.html">Aula 1</a></li><hr>    
+                        <li class="menuli"><a class="menua" href="../aula2/index.html">Aula 2</a></li><hr>                 
+                        <li class="menuli"><a onclick="aula3Decer()" class="menua" href="#">Aula 3</a></li>
+                        <li id="submenu1" class="submenu"><a class="menua" href="index.html">JavaScript</a></li>
+                        <li id="submenu2" class="submenu"><a class="menua" href="pages/pratica.html">Prática</a></li>
+                        <li id="submenu" class="submenu"><a class="menua" href="#">Prática</a></li><hr>
+                        <li class="menuli"><a class="menua" href="../aula4/index.html">Aula 4</a></li><hr>
+                    </ul>
+                </nav>
+                <article>
+                    <div id="dvDisplay">
+                        <h1 class="titulo">Bem-Vindo a aula 3 de web</h1>
+                        <nav class="">
+                            <ul class="opcoes">
+                                <li class="hori"><button class="btn btnRed" onclick="trocarCor('#ff0000')">Vermelho</button> </li>
+                                <li class="hori"><button class="btn btnGreen" onclick="trocarCor('#00ff00')">Verde</button></li>
+                                <li class="hori"><button class="btn btnBlue" onclick="trocarCor('#0000ff')">Azul</button></li>
+                                <li class="hori"><button class="btn btnWhite" onclick="trocarCores('#ffffff')">Branco</button></li>
+                                <li class="hori"><button class="btn btnBlack" onclick="trocarCores('#000000')">Preto</button></li>
+                                <li class="hori"><button class="btn btnBlack" onclick="temaBlack()">Tema Preto</button></li>
+                                <li class="hori"><button class="btn btnWhite" onclick="temaNorm()">Tema Normal</button></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <h1 class="titulo">Aula 3 - JavaScript</h1>
+                    <p>
+                        JavaScript é uma liguagem de programação multiparadigma, com ela pode-se escolher
+                        a forma como vai utilizar, usando a orientação a objetos, pode criar classes,
+                        usar métodos, pode ser visibilidade. Pode-se usar para programação funcional,
+                        atribuir funções dentro de variáveis, retornar funções na chamada de outra função.
+                    </p>
+                    <p>
+                        O JavaScript atua de forma assíncrona, então pode deixar executando uma tarefa e
+                        ele te avisa quando estiver pronta. Podendo ter envios de mensagem e acessar informações
+                        no servidor. Esta linguagem não é totalmente pura em programação funcional, ou orientada
+                        a objetos, portanto pode usar o melhor de cada um, mas mesmo assim ela é estruturada.
+                    </p>
+                    <p>
+                        JavaScript dá uma liberdade na hora de construir o código, porém uma desvantagem disso
+                        é que em alguns casos pode acontecer de fazer soluções muito complexas para problemas 
+                        simples. Inicialmente ele foi desenvolvido para programação de páginas HTML, dando vida
+                        com comportamentos dinâmicos.
+                    </p>
+                    <p>
+                        Por conta de JavaScript ser multiparadigma e ser interpretada, é uma linguagem de programação
+                        muito boa para navegadores, o código já vem do servidor e já é executado na página,
+                        fazendo toda a criação da lógica para a página. Há alguns anos surgiu o Node.JS, que é um interpretador
+                        de JavaScript, que faz com que ele seja executado em cima do sistema operacional, sendo executado 
+                        do mesmo jeito que php, phyton, ruby.
+                    </p>
+                    <p>
+                        Com o NodeJS é possivel construir o código back-end em JavaScript, assim como é construído em php no
+                        servidor, então pode programar em JavaScript no front-end e no back-end. E também é possivel usar JavaScript
+                        para consultas em bancos de dados noSQL, como é possível ver no MongoDB e CouchDB por exemplo, que
+                        utilizam o JavaScript como base para fazer consultas em suas bases de dados, esses bancos de dados são
+                        baseados em árvores (nós), e são basicamente um json, mais podereso e estruturado, e como JavaScript é a 
+                        linguagem base para manipular dados desse tipo. 
+                    </p>
+                    <br><hr><br>
+                    <h1 class="titulo">Histórico</h1>
+                    <p>
+                        Em 1993 mosaic era o navegador mais popular da Web. Que foi baseado no conceito do www de tim berners-lee,
+                        dominando os poucos usuários que tinha na época. Em 1994 surgiu o nestcape navigator, com a ideia de adicionar
+                        uma linguagem de programação dentro do navegador, por conta de ser até então códigos em HTML, hipertexto e
+                        algumas imagens.
+                    </p>
+                    <p>
+                        Então tinhamos um padrão para um browser específico, o nestcape navigator, e se acessasse aquela 
+                        página sem este browser, a página não iria funcionar, neste caso a linguagem usada é a skinner um
+                        dialeto do Lisp, é uma linguagem lógica. Com o passar do tempo, junto com a nestcape começou a 
+                        concorrência com o internet explorer, para manter essa concorrência, o nestcape criou uma nova 
+                        linguagem que fosse mais fácil programar, e por conta da popularidade do Java criou-se uma linguagem
+                        com o nome parecido e com a sintaxe parecida, que o protótipo ficou pronto em 10 dias.
+                    </p>
+                    <p>
+                        Então em 1995 a Sun Microsystems criadora do Java, licenciou o uso do nome Java para a nestcape e 
+                        assim surgiu o JavaScript. Porém é só o nome parecido, o JavaScript não usa base do Java, não se 
+                        expira na sintaxe de classes. O Java que rodava no navegador, era um plugin que permitia a execução
+                        de Java nos navegadores, chamados de athletics, que possibilitava a criação de tela, usava-se muito 
+                        Java nos navegadores por volta dos anos 2000, para internet backank, por conta que tinha problema de
+                        segurança básico, que era as pessoas instalando keyloggers, que tem a função de observar o teclado e 
+                        guardar todas as teclas digitadas. 
+                    </p>
+                    <p>
+                        A solução era a inserção de dados, sem ter que digitar no teclado, então tinham teclados virtuais, 
+                        parecido com o que se tem hoje nos smartphones, os teclados que aparecem quando precisa digitar algo,
+                        usava para digitar a senha do banco no navegador com os teclados virtuais. Quando acessava o netbank, 
+                        para inserir a senha quando pedia, aparecia o teclado virtual em Java, para que não digitasse nada. 
+                    </p>
+                    <p>
+                        O problema do athletics em Java é que tinha muita falha de segurança, abria portas, e com isto no HTML5
+                        já foi abolido, então não é bom usar esses plugins. O mesmo aconteceu com o flash nas suas animações ou 
+                        o silverlight, o silverlight que veio para concorrer com o flash mais ele veio de uma microsoft muito 
+                        adepta ao software proprietário, e as questões de licenciamento, e possuía um poder interessante de conseguir
+                        fazer streaming de vídeos sem que conseguissem piratear aqueles vídeos, portanto a tecnologia mais popular 
+                        que a netflix utilizou foi o silverlight. E por isso precisa instalar o silverlight no navegador para acessar 
+                        a netflix. Já o youtube usava flash para fazer seus primeiro players de vídeos.
+                    </p>
+                    <p>
+                        O ECMAScript é um padrão de JavaScript, para que o interpretador JavaScript, o SpiderMonkey, que os 
+                        navegadores possam entender melhor os códigos feitos em JavaScript, e também para que o 
+                        programador também possa entender o código. E cada browser terá que implementar o interpretador 
+                        JavaScript, o firefox tem um interpretador de JavaScript, também chamado de motor JavaScript, o 
+                        google chrome tem o motor conhecido como V8 que é outro motor, a microsoft tentou fazer porém sem sucesso
+                        copiou o V8 e fez o microsoft edge (Chakra) baseado no chromium, que é a base do google chrome. 
+                        O safari utiliza o JavaScriptCore.
+                    </p>
+                    <p>
+                        ECMAScript foi criado para que não virasse bagunça, e cada navegador implementasse de um jeito, 
+                        ele é uma especificação de como o JavaScript deve ser, quando um browser é compatível com o 
+                        ECMAScript6, ele é compatível com uma das últimas versões do JavaScript.
+                    </p>
+                    <br><hr><br>
+                    <h1 class="titulo">JavaScript na Prática</h1>
+                    <p>
+                        Podemos inserir JavaScript de duas maneiras, no documento HTML, usando o tag &lt;script&gt; 
+                        códigos JavaScript&lt;/script&gt; ou usando a tag para  chamar um arquivo com a extesão .js, 
+                        que é a extensão para o JavaScript, a tag para chamar o arquivo é esta 
+                        &lt;script src="Endereço do arquivo.js"&gt;&lt;/script&gt;
+                    </p>
+                    <p>
+                        No método de tag &lt;script&gt; codigos JavaScript&lt;/script&gt;, poderá ver alguns códigos 
+                        com um atributo lang=" " para indicar JavaScript, ou a versão, mas hoje não faz muito sentido 
+                        fazer isso, porque a linguagem principal que vai rodar no navegador será JavaScript. Antigamente 
+                        era necessário, poís tinhamos o visual basic script, o vb script, o coffeeScript,o JavaScript, 
+                        então tinha-se varios motores diferentes para estas linguagens.
+                    </p>
+                    <p>
+                        Esses dois métodos podem ser colocados em qualquer lugar do documento HTML, tem pessoas que 
+                        colocam no início da página, tem pessoas que colocam no final da página. Mas depende dos 
+                        casos se o script tiver poucos códigos que tenham poucos processamentos, não fará diferença 
+                        o local, caso tenha arquivos maiores melhor opção é colocá-los no final para que carregue todo 
+                        o documento e todo o estilo primeiro para que a página não fique desconfigurada.
+                    </p>
+                    <p>
+                        O JavaScript ele é executado a partir do momento que ele é inserido, por isso temos que 
+                        tomar cuidado, tem as técnicas para dizer como é o comportamento dele colocando
+                        um atributo na tag. Com o atributo, é como falar para o script rodar  assíncrono, 
+                        ou quando a página toda carregar. Em geral o navegador pega o arquivo HTML, ele começa 
+                        a interpretar linha a linha, quando chegar o script, faz uma requisição no servidor pega
+                        o arquivo JavaScrip, e vai executá-lo naquele momento.
+                    </p>
+                    <p>
+                        Caso seu arquivo JavaScript estiver referenciando algum elemento que irá ser criado embaixo
+                        desse código, então vai dar erro, não vai executar o código, e vai falar que não existe esse
+                        elemento. O melhor é carregar todas as funções e depois as executar, para evitar 
+                        desincronização no momento de carregar o documento.
+                    </p>
+                    <p>
+                        Dentro das limitações do navegador, com JavaScript é possivel criar o que quiser, ele é uma 
+                        linguaguem de programação. Um exemplo do que pode ser feito com ele é  manipular a janela 
+                        do navegador, mas hoje em dia alguns navegadores bloqueiam por conta dos spmmers,
+                        veja agora os exemplos para abrir e fechar uma janela:
+                    </p>
+                    <ul>
+                        <li>Abrir uma Janela:</li>
+                        <p>window.open("https://www.google.com.br");</p>
+                        <li><button onclick="abrir()" class="btn btnBlack">window.open("https://www.google.com.br");</button></li>
+                        <li>Fechar uma Janela:</li>
+                        <p>var w = window.open("https://www.google.com.br");</p>
+                        <p>w.close();</p>
+                        <li><button onclick="fechar()" class="btn btnBlack">w.close();</button></li>
+                        
+                    </ul>
+                    <p>
+                        Esse primeiro comando abre uma nova aba, esse comando window.open() foi um dos mais 
+                        famoso que tinham antigamente, por conta dos popups, quando abria uma página, os popups 
+                        não abria dentro da página, eles abriam outra janela, não tinha nem abas nesta época.
+                    </p>
+                    <p>
+                       Além de passar url neste comando, pode passar parâmetros para construir a página, como não 
+                       poder ter barra de navegação ou tamanho fixo. Em JavaScript podemos usar o var nome; para 
+                       definir uma variavel. Como foi dito esta técnica são bloqueadas por bloqueadores de popups. 
+                    </p>
+                    <p>
+                        Podemos também controlar o documento, que no caso é o documento HTML, já o comando window 
+                        é a aba na qual o documento está aberto. No documento conseguimos manipular os elemento 
+                        ou atributos ou até mesmo o estilo do documento aberto. veja exemplos:
+                    </p>
+                    <ul>
+                        <li>Alterar o conteúdo:</li>
+                        <p>document.getElementById("demo").innerHTML = "Olá JavaScript";</p>
+                        <button id="exConte" onclick="exConteudo()" class="btn btnBlue">Olá HTML</button>
+                        <li>Alterar atributo:</li>
+                        <p>document.getElementById("minhaImagem").src = "pic_bulboff.gif"; </p>
+                        <div class="exemAtri">
+                            <img class="exemploAtri" id="exAtri" src="images/exemploHTML.jpg" alt=""><br>
+                            <button  onclick="atributoHtml()" class="btn btnBlack">HTML</button>
+                            <button  onclick="atributoCss()" class="btn btnWhite">CSS</button>
+                            <button  onclick="atributoJs()" class="btn btnRed">JavaScript</button>
+                        </div>
+                        <li>Alterar o Estilo:</li>
+                        <p id="exEstilo">document.getElementById("demo").style.display = "none"; </p>
+                        <button onclick="aparecer()" class="btn btnBlue" >Visualizar</button>
+                        <button onclick="sumir()" class="btn btnRed">Apagar</button>
+                    </ul>
+                    <p>
+                        Como podemos ver podemos mudar o texto do elemento, ou também mudar o src das imagens, 
+                        e até mesmo construir todo o CSS com JavaScript, porém isso não é uma boa ideia. Mas 
+                        tem algumas técnicas, uns frameworks para programar a interface com JavaScript e não cria css.
+                    </p>
+                    <p>
+                        Temos mais alguns comandos importante:
+                    </p>
+                    <ul>
+                        <li>console</li>
+                        <p>Que é semelhante ao printf do Java ou o cout do C++, para exibir na tela</p>
+                        <li>navigator</li>
+                        <p>Que é o navegador.</p>
+                        <p id="navegador"></p>
+                        <button onclick="exNavegador()" class="btn btnBlue">navigator.language;</button>
+                        <li>navigator.geolocation</li>                     
+                        <p>Para trabalhar com gps ou geolocalização do dispositivo.</p>
+                        <p>No celular é o gps, no computador achará outra forma como a rede para achar localização.</p>
+                        <p id="geo"></p>
+                        <button onclick="exGeo()" class="btn btnBlue">navigator.geolocation;</button>
+                        <li>window.history</li>
+                        <p>Que acessa o histórico do usuário</p>
+                        <p id="histo"></p>
+                        <button onclick="exhitorico()" class="btn btnBlue">window.history;</button>
+                        <li>window.location</li>
+                        <p>Barra de endereço, consegue saber onde está e redirecionar</p>
+                        <p id="pagina"></p>
+                        <button onclick="exLocaliza()" class="btn btnRed">window.location.href;</button>
+                        <li>screen</li>
+                        <p>Define informações da tela, consegue saber tamanho, resolução e profundidade de pixel</p>
+                        <p id="tela"></p>
+                        <button onclick="extela()" class="btn btnBlue">screen.width;</button>
+                    </ul>
+                </article>
+            </section>
+        </div>
+        <div>
+            <footer id="footer">
+                <p>A tag Footer é a estrutura de rodapé da página html </p>
+                <p>Fonte: <a href="https://www.youtube.com/watch?v=u43n-1XLA8Y">FullStack-CCT</a></p>
+            </footer>
+        </div>
+        <script src="js/main.js" async></script>
+    </body>
+</html>

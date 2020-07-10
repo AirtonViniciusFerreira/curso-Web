@@ -1,0 +1,196 @@
+.sessao{
+    display: table;
+    background-color: #292929;  
+              
+}
+
+.submenu{
+    display: none;
+}
+
+.menunav{
+    width: 10%; 
+    min-height: 750px;    
+    background-color: #2e2e2e;
+    font-size: 20px;
+    border: solid;
+    float: left;
+    margin-right: 10px; 
+    border: 1px solid #6b6767;          
+}
+
+.menuul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menuli{
+    display: list-item;       
+}
+
+.menua{
+    text-decoration: none;
+    color: #2e9e02;
+}
+
+article{
+    width: 80%;
+    float: left;
+    background-color: #292929;
+    color: #ffffff;
+}
+
+article p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.codigo{
+    font-size: 17px;
+    width: 100%;
+}
+
+.titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+.imagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.list{
+    font-size: 18px;
+}
+
+.pexemploT{
+    color: #002fff;
+}
+
+.pexemplo{
+    color: #ff0000;
+    font-family: serif;
+}
+
+.pexemlin{
+    color: #8b4513;
+    font-family: monospace;
+}
+
+@media(max-width:1100px){
+    .sessao{
+        display: block;
+        width: 100%;
+    }
+    .submenu{
+        display: inline;
+    }
+
+    .menunav{
+        width: 100%;
+        min-height: auto;
+        font-size: 30px;
+    }      
+    
+    .menuli{
+        display: inline;
+    }
+
+    article{
+        width: 100%;
+    }
+    
+    article p{
+        text-align: justify;
+        font-size: 35px;
+    }
+
+    .titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .codigo{
+        text-size-adjust: inherit;
+        font-size: 30px;
+    }
+
+    .list{
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .pexemploT{
+        font-size: 35px;
+        width: 100%;
+    }
+    
+    .pexemplo{
+        font-size: 35px;
+        width: 100%;
+    }
+    
+    .pexemlin{
+        font-size: 35px;
+        width: 100%;
+    }
+
+}
+
+@media(max-width:600px){
+    .menunav{
+        width: 100%;
+        min-height: auto;
+        font-size: 20px;
+    }
+
+    .menuli{
+        display: inline;
+    }
+
+    article{
+        width: 100%;
+    }
+    
+    article p{
+        text-align: justify;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .titulo{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .imagem{
+        width: 300px;
+    }
+
+    .list{
+        font-size: 10px;
+        width: 100%;
+        
+    }
+
+    .pexemploT{
+        font-size: 10px;
+        width: 100%;
+    }
+    
+    .pexemplo{
+        font-size: 10px;
+        width: 100%;
+    }
+    
+    .pexemlin{
+        font-size: 10px;
+        width: 100%;
+    }
+}
+

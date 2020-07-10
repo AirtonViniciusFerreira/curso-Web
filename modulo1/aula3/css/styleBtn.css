@@ -1,0 +1,41 @@
+.btn{
+    padding: 0.5vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    border-width: 0.2vw;
+}
+
+.btnRed{
+    background-color: #ff5151;
+    color: white;
+    font-size: 1vw;
+    border-color: #ff5151;
+}
+
+.btnBlack{
+    background-color: #424242;
+    color: white;
+    font-size: 1vw;
+    border-color: #424242;
+}
+
+.btnBlue{
+    background-color: #517aff;
+    color: #ffffff;
+    font-size: 1vw;
+    border-color: #517aff;
+}
+
+.btnWhite{
+    background-color: #cecece;
+    color: #000000;
+    font-size: 1vw;
+    border-color: #cecece;
+}
+
+.btnGreen{
+    background-color: #32fa3c;
+    color: #000000;
+    font-size: 1vw;
+    border-color: #32fa3c;
+}

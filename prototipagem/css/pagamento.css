@@ -1,0 +1,23 @@
+
+.selector-for-some-widget{
+    box-sizing: content-box;
+}
+
+p.med{
+    font-size: 9mm;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    p.med{
+        font-size: 12mm;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    p.med{
+        font-size: 6mm;
+    }
+
+}

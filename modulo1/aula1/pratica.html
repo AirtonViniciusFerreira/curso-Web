@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Modulo 1 - Aula 1</title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function aula1Decer(){
+                var submenu = document.getElementById('submenu1');
+                var submenu2 = document.getElementById('submenu2');
+                if(submenu.style.display == 'list-item'){
+                submenu.style.display = 'none';
+                submenu2.style.display = 'none';
+                }else{
+                submenu.style.display = 'list-item';
+                submenu2.style.display = 'list-item';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="../index.html">Módulo 1</a></li>
+                    <li><a href="/modulo2/index.html">Módulo 2</a></li>
+                    <li><a href="#">Módulo 3</a></li>
+                    <li><a href="#">Módulo 4</a></li>
+                    <li><a href="/prototipagem/index.html">Prototipagem</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <header>
+                <h1>Olá mundo</h1> 
+                <h2>Bem-vindo ao curso FullStack - Módulo 1</h2>
+            </header>
+        </div>
+        <div>
+            <section>
+                <nav class="nav">
+                    <ul class="ul">
+                        <li class="li"><a class="a" id="aula1" onclick="aula1Decer()" href="#">Aula 1</a></li>
+                        <li id="submenu1" class="submenu"><a  class="a" href="/modulo1/aula1/index.html">Teoria</a></li>
+                        <li id="submenu2" class="submenu"><a  class="a" href="/modulo1/aula1/pratica.html">Prática</a></li><hr>
+                        <li class="li"><a class="a" href="/modulo1/aula2/index.html">Aula 2</a></li><hr>
+                        <li class="li"><a class="a" href="../aula3/index.html">Aula 3</a></li><hr>
+                        <li class="li"><a class="a" href="#">Aula 4</a></li><hr>
+                    </ul>
+                </nav>
+                <article>
+                    <h3>Aula 1 - Prática</h3>
+                    <p>
+                        No HTML os arquivos tem que ter a extensão ".html" no nome do arquivo. O mais comum
+                        dos arquivos Web é o arquivo index.html que é a página inicial do site.
+                    </p>
+                    <p>
+                        Na prática o mais usado é usar extensão na IDE do inglês Integrated Development Environment
+                        ou Ambiente de Desenvolvimento de programação para facilitar a escrita dos elementos HTML.
+                        Todo elemento precisa ser aberto &lt;elemento&gt; e fechado &lt;/elemento&gt;
+                    </p>
+                    <p>
+                        Para criar uma paágina HTML, basta criar um arquivo ".html" e colocar a estrutura base do HTML.
+                        Como mostrado neste exemplo que mostra um Olá mundo.
+                    </p>
+                    <pre class="list">
+                        &lt;html&gt;
+                            &lt;head&gt;
+
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                Olá Mundo
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <p>
+                        Assim a página irá ser aberta, porém será aberta como um arquivo normal.
+                        Tem algumas coisas que só funcionará se a página for servida, mas não precisará
+                        de um servidor na internet sempre para ver a página.
+                        Pode servir localmente como por exemplo usando a extensão "live server" no Visual Studio Code.
+                        Com esta extensão pode mudar o código e visualizar apenas salvando o arquivo, assim pode
+                        programar dividindo tela ou usando outra tela e ir vendo o resultado na hora.
+                    </p>
+                    <p>
+                        Este exemplo de cima não tem nenhuma formatação, então temos que usar o estilo com o elemento 
+                        &lt;style&gt;&lt;/style&gt;. Aqui está um exemplo mudando a cor do texto de todos os elementos
+                        "h1" que é um cabeçalho. Estamos mudando de preto para vermelho:
+                    </p>
+                    <pre class="list">
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                &lt;style&gt;
+                                    h1{
+                                        color: red;
+                                    }
+                                &lt;/style&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;h1&gt;Olá mundo&lt;/h1&gt;
+                                Olá Mundo
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <p>
+                        Temos diversos elementos no HTML, tem o link onde aponta o endereço de uma outra página do seu
+                        site ou de outros sites. Para isso utilizamos o elemento "&lt;a href="https://www.uenp.edu.br"
+                        &gt;Ir para uenp&lt;/a&gt;", entre o elemento colocamos o texto que irá aparecer para clicar, como por exemplo,
+                        o nome do site ou o nome da página, e dentro do primeiro elemento usamos o href=" " e dentro das aspas
+                        colocamos o endereço da página. Como no exemplo a seguir:
+                    </p>
+                    <pre class="list">
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                &lt;style&gt;
+                                    h1{
+                                        color: red;
+                                    }
+                                &lt;/style&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;h1&gt;Olá mundo&lt;/h1&gt;
+                                Olá mundo
+                                &lt;a href="https://www.uenp.edu.br"&gt;Ir para uenp&lt;/a&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <p>
+                        Podemos ter também o JavaScript dentro dos arquivo HTML, para tornar a página dinâmica.
+                        Colocamos o elemento &lt;script&gt;&lt;/script&gt; dentro do elemento head, como no 
+                        exemplo a seguir:
+                    </p>
+                    <pre class="list">
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                &lt;style&gt;
+                                    h1{
+                                        color: red;
+                                    }
+                                &lt;/style&gt;
+                                &lt;script&gt;
+                                    function foo(){
+                                        alert("Olá mundo");
+                                    }
+                                &lt;/script&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;h1&gt;Olá mundo&lt;/h1&gt;
+                                &lt;h2&gt;Bem-vindo ao curso&lt;/h2&gt;
+                                &lt;button onclick="foo()"&gt;Cliqui-me&lt;/button&gt;
+                                &lt;a href="https://www.uenp.edu.br"&gt;Ir para uenp&lt;/a&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <p>
+                        Ou colocamos o JavaScript no final do HTML para que carregue todos os elementos e depois execute
+                        o código JavaScript que pode demorar alguns segundos a mais.
+                    </p>
+                    <pre class="list">
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                &lt;style&gt;
+                                    h1{
+                                        color: red;
+                                    }
+                                &lt;/style&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;h1&gt;Olá mundo&lt;/h1&gt;
+                                &lt;h2&gt;Bem-vindo ao curso&lt;/h2&gt;
+                                &lt;button onclick="foo()"&gt;Cliqui-me&lt;/button&gt;
+                                &lt;a href="https://www.uenp.edu.br"&gt;Ir para uenp&lt;/a&gt;
+                            &lt;/body&gt;
+                            &lt;script&gt;
+                                function foo(){
+                                    alert("Olá mundo");
+                                }
+                            &lt;/script&gt;
+                        &lt;/html&gt;
+                    </pre>
+                </article>
+            </section>
+        </div>
+        <div>
+            <footer>
+                <p>Fonte: <a href="https://www.youtube.com/watch?v=kNRIJ37XZ6w">FullStack-CCT</a></p>
+                para mais informações sobre HTML consultar: <a href="https://www.w3schools.com/html/default.asp">w3scools</a>
+            </footer>
+        </div>
+        
+    </body>
+</html>
