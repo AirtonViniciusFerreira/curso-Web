@@ -1,0 +1,21 @@
+.sessao{
+    background-color: #292929; 
+    text-indent: 2vw;
+    text-align: justify; 
+    color: #ffffff;
+}
+
+.titulo{
+    text-align: center;
+    text-indent: 0vw;
+}
+
+.baner{
+    background-image: linear-gradient(#646262, #141414);
+}
+
+.banerimg{
+    width: 100%;
+    height: 225px;
+}
+
