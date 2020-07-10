@@ -44,7 +44,8 @@
                         <div class="row"> 
                             <div class="col">
                                 <p class="paragrafo medio">CPF/CNPJ: </p>
-                                <input type="text" id="cpf" name="cpf"  class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00">
+                                <input type="text" id="cpf" name="cpf"  class="form-control" 
+                                title="000.000.000-00" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" required placeholder="000.000.000-00">
                                 <button id="enviar" class="btn btn-primary" type="submit">Procurar</button>
                             </div>  
                         </div>
@@ -59,7 +60,7 @@
             </div>
         </section>
         <section id="tabe" class="tabela">
-            <h1 id="negativado" class="h1-center"></h1>
+            <h1 id="negativado" class="h1 centraliza"></h1>
             <table id="tabela" class="table table-dark tabela">
                 <THead>
                     <tr>

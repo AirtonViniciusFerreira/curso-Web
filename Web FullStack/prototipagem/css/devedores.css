@@ -12,6 +12,10 @@ p.med{
     margin-left: 30%;
 }
 
+.centraliza{
+    text-align: center;
+}
+
 @media only screen and (max-width: 1400px) {
     p.med{
         font-size: 12mm;
