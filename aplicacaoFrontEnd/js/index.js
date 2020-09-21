@@ -30,8 +30,7 @@ function logar(){
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>  
+            </form> 
         `
         ;
     document.getElementById("titulo").innerText = "Início";
@@ -49,6 +48,7 @@ function cadastrar(){
                     </div>
                 </div>
             </div>
+            <form id="form-cadasrtro" >
                 <div class="container">
                     <div class="row">
                         <div class="col s12 l6" >
@@ -67,10 +67,11 @@ function cadastrar(){
                             <button class="btn waves-effect waves-light" onclick="cadastro()" type="submit">Cadastrar<i class="material-icons right">send</i></button>
                         </div>
                         <div class="col s12 l6" >
-                            <a href="#" onclick="logar()" class="btn red waves-effect waves-light">Entrar</a>
+                            <a href="#!" onclick="logar()" class="btn red waves-effect waves-light">Entrar</a>
                         </div>
                     </div>
                 </div>
+            </form>
         </div>`;
         document.getElementById("titulo").innerText = "Cadastro";
         document.getElementById("conteudo").innerHTML = conteudo;
@@ -99,7 +100,7 @@ function cadastro(){
             body: JSON.stringify(object) // adiciona o Json no body
         })
         //recebe a  resposta e verifica se foi efetivado
-        .then((response)=> {
+        .then((response) => {
             if(response.ok){ 
                 alert("Cadastrado com sucesso");
                 window.location.href = "index.html";
@@ -139,6 +140,7 @@ function login(){
             if(response.ok){
                 alert("Logado com sucesso");
                 window.location.href = "pages/debts.html";
+                return console.log(response.json);
             }
         })
         //trata algum erro
